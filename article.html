@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="background-color: #e9e9e9;">
+    <header class="article-header">
+        <h1>The Daily Owl</h1>
+        <p>Writers of KSU | October 2nd, 2024</p>
+    </header>
+   
+    <nav>
+        <div class="hamburger">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main class="article-content">
+        <section>
+            <h2>Campus Spotlight: Sustainability Initiatives Gain Momentum</h2>
+            <p>As the new academic year kicks off, the university’s commitment to sustainability is shining brighter than ever. This month, students gathered at the annual EcoFair, showcasing innovative projects aimed at reducing campus waste and promoting renewable energy. The event featured workshops on sustainable living and a panel discussion with local environmental leaders, emphasizing the importance of student involvement in ecological advocacy. "We want to empower our peers to take action," said Sarah Thompson, president of the Green Campus Coalition. With plans for a campus-wide recycling program and the installation of solar panels on several buildings, this year's initiatives aim to foster a culture of sustainability that resonates beyond the classroom.</p>
+            <img src="images/Eco Fair.jpg"alt="Ecofair picture" width="500" Height="400">
+        </section>
+        
+        <section>
+            <h2>A Call to Action: Get Involved!</h2>
+            <p>As we embark on another academic year, it’s crucial to remember the power of community engagement. Whether through clubs, volunteer opportunities, or campus events, getting involved enriches not just your college experience but also the lives of those around you. At KSU, there are countless ways to make an impact. Take a moment to explore the various organizations on campus, attend events, and meet new people. Together, we can create a vibrant and supportive community.</p>               
+            <img src="images/Clubpic.jpg"alt="Club Picture" width="500" Height="400">
+        </section>
+        <!--Additional sections-->
+        <aside class="sidebar">
+            <section class="advertisement">
+                <h3>Unlock Your Future: Join Us</h3>
+                <p>Join us for our upcoming Open House to explore campus life, meet fellow students, and learn about our scholarship opportunities. Discover why KSU is the perfect place to unlock your potential and shape your future. Don’t miss out—your adventure begins here! For more information, visit our website</p>
+                <img src="images/Open House.jpg"alt="OpenHouse picture" width="500" Height="200">
+            </section>
+        </aside>
+    </main>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

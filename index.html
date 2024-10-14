@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - The Daily Owl</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="article-header">
+        <h1>The Daily Owl</h1>
+        <p>Writers of KSU | October 2nd, 2024</p>
+    </header>
+   
+    <nav>
+        <div class="hamburger">☰</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="article.html">Article</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    
+    <main class="article-content">
+        <section>
+            <h2>Welcome to The Daily Owl</h2>
+            <p>Your source for the latest news and stories from KSU. Explore our articles, discover our gallery, and get involved in campus events.</p>
+            <img src="images/Ksu sign.jpg" alt="Welcome Image" width="500" height="400">
+        </section>
+        <aside class="sidebar">
+            <section>
+                <h3>Latest Articles</h3>
+                <ul>
+                    <li><a href="article.html">Campus Spotlight: Sustainability Initiatives Gain Momentum</a></li>
+                    <li><a href="article.html">A Call to Action: Get Involved!</a></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+
+    <script>
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

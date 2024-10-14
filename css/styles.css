@@ -1,0 +1,165 @@
+header {
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+    padding: 20px
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 5px
+}
+
+nav a {
+    text-decoration: none;
+    color: #6400de;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 80px
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: color #e9e9e9;
+    margin: 0;
+    padding: 20px
+}
+
+main {
+    display: block;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    row-gap: 200px;
+    padding: 20px;
+    background-color: rgb(192, 192, 192);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f3f3f3; 
+}
+
+.article-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.article-header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.article-header p{
+    font-style: italic;
+    color: #555
+}
+
+.article-content {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.advertisement {
+    padding: 10px;
+    border: 1px solid #fff200;
+    text-align: center;
+}
+
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid*/
+    gap: 20px; /* gap between pics*/
+    padding: 20px;
+}
+
+.photo img {
+    width: 100%; /* Ensures images are responsive in containers */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    gap: 20px; /* adjust gap bewteen navigation items*/
+}
+/* Hamburger Menu Style */
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+/* Hide Regular navigation items on smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        display: none; /*Hide by default */
+    }
+
+    nav ul.active {
+        display: flex; /*Show when active */
+    }
+
+    nav .hamburger {
+        display: block; /*Show hamburger on mobile */
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .article-content {
+        margin-right: 0;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .gallery img {
+        width: calc(50% - 10px); /* Adjust for two columns */
+        height: auto;
+    }
+
+}
